@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About OLA | Education Equity, Context & Institutional Partners</title>
+  <meta name="description" content="Discover Odiso Leadership Academy's founding story, demographic context in Nigeria, dual enrollment partnerships with CMU and Columbia Teachers College IUME, and 100% free equity model.">
+  
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ola: {
+              purple: {
+                950: '#14021F',
+                900: '#240536',
+                850: '#2E0A42',
+                800: '#3E0957',
+                700: '#561077',
+                600: '#73199D',
+                500: '#9425C5',
+                200: '#E9D5FF',
+                100: '#F3E8FF',
+                50: '#FAF5FF',
+              },
+              gold: {
+                800: '#804E08',
+                700: '#97611A',
+                600: '#B87B24',
+                500: '#D99B4C',
+                400: '#EBB46E',
+                300: '#F5CE98',
+                200: '#FDE68A',
+                100: '#FEF3C7',
+                50: '#FFFDF5',
+              },
+              alabaster: '#FAF9F6',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-ola-alabaster text-slate-800 antialiased selection:bg-ola-gold-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-ola-purple-950 text-white text-xs py-2 px-4 border-b border-ola-purple-900/60">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <span class="text-slate-300">A Female-Led Education Equity Startup School · Advancing UN SDGs #4 & #5</span>
+      <span class="text-ola-gold-400 font-medium">Lagos Free Zone, Ibeju-Lekki</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden shadow-md border border-ola-purple-800/20 group-hover:scale-105 transition-transform">
+            <img src="assets/images/logo.jpeg" alt="Odiso Leadership Academy Crest" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <span class="block font-heading font-extrabold text-xl tracking-tight text-ola-purple-950 leading-tight">ODISO</span>
+            <span class="block text-[11px] font-medium tracking-widest text-ola-gold-700 uppercase">Leadership Academy</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-700">
+          <a href="index.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Home</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg text-ola-purple-800 font-semibold bg-ola-purple-50">About & Context</a>
+          <a href="academics.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Life at Odiso</a>
+          <a href="admissions.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Campus</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-3">
+          <a href="admissions.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-ola-purple-800 hover:bg-ola-purple-900 shadow-md">
+            Nominate a Scholar
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+    <div class="fixed right-0 top-0 bottom-0 w-5/6 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+          <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-10 h-10 rounded-lg object-cover">
+          <button id="mobile-menu-close" class="p-2 text-slate-500"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <nav class="mt-6 flex flex-col space-y-1 text-sm font-medium">
+          <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Home</a>
+          <a href="about.html" class="px-4 py-3 rounded-xl bg-ola-purple-50 text-ola-purple-900 font-semibold">About & Context</a>
+          <a href="academics.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Life at Odiso</a>
+          <a href="admissions.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Campus</a>
+        </nav>
+      </div>
+      <a href="admissions.html" class="w-full py-3 text-center rounded-xl font-semibold text-white bg-ola-purple-800">Nominate a Scholar (100% Free)</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="py-16 bg-ola-purple-950 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-400">Context, Purpose & Partners</span>
+        <h1 class="text-3xl sm:text-5xl font-heading font-extrabold text-white mt-3">
+          Why OLA Exists: <br><span class="gold-text-gradient">Human Capital for Africa’s Future</span>
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base mt-4 leading-relaxed">
+          Nigeria will account for 1-of-10 global births by 2050. Odiso Leadership Academy (OLA) is built to ensure deserving Nigerian girls are tooled to lead this transformation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grounding Demographic & Economic Reality Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">The Grounding Data</span>
+        <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mt-1">
+          Nigeria’s Human Capital Challenge & Geostrategic Promise
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-5 text-sm sm:text-base text-slate-600 leading-relaxed reveal">
+          <p>
+            With over <strong>230 million people</strong> and a median age of <strong>19</strong>, Nigeria is the epicenter of UNICEF’s forecast that <em>“the future of humanity is increasingly African.”</em> By 2050, 1 in 4 global workers will be African.
+          </p>
+          <p>
+            Yet Nigeria is constrained by severe human capital challenges: ranked <strong>161 in the World Bank 2020 Human Capital Index</strong>, it has the world’s second highest number of persons living in extreme poverty, and the world’s largest out-of-school population—over <strong>15 million children, disproportionately girls</strong>.
+          </p>
+          <p>
+            According to national education statistics, of the <strong>4,443,286 females aged 14–24</strong> surveyed across rural and underserved regions:
+          </p>
+          
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-ola-purple-50 border border-ola-purple-100 text-center">
+              <div class="text-2xl font-heading font-extrabold text-ola-purple-800">0.7%</div>
+              <div class="text-xs text-slate-600 mt-1">Tertiary Education</div>
+            </div>
+            <div class="p-4 rounded-xl bg-ola-purple-50 border border-ola-purple-100 text-center">
+              <div class="text-2xl font-heading font-extrabold text-ola-purple-800">11.6%</div>
+              <div class="text-xs text-slate-600 mt-1">Finished Secondary</div>
+            </div>
+            <div class="p-4 rounded-xl bg-ola-purple-50 border border-ola-purple-100 text-center">
+              <div class="text-2xl font-heading font-extrabold text-ola-purple-800">75%</div>
+              <div class="text-xs text-slate-600 mt-1">Unemployed</div>
+            </div>
+            <div class="p-4 rounded-xl bg-ola-purple-50 border border-ola-purple-100 text-center">
+              <div class="text-2xl font-heading font-extrabold text-ola-purple-800">22%</div>
+              <div class="text-xs text-slate-600 mt-1">In Agriculture</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 reveal-right">
+          <div class="p-8 rounded-3xl bg-ola-purple-950 text-white shadow-xl space-y-4">
+            <span class="inline-block px-3 py-1 rounded-full bg-ola-gold-500/20 text-ola-gold-400 text-xs font-bold">The OLA Solution</span>
+            <h3 class="text-xl font-heading font-bold">A Post-Secondary Pre-Tertiary Venture</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Odiso Leadership Academy (OLA) is the sole not-for-profit non-parochial private education equity school in Nigeria equipping the most promising girls from all 36 states to compete in science, technology, engineering, arts, agriculture, and mathematics (STEAAM).
+            </p>
+            <div class="pt-2 border-t border-ola-purple-900 text-xs text-ola-gold-300">
+              ✓ Advancing UN SDG #4 (Quality Education) & SDG #5 (Gender Equality)
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Global High-Capacity Partnerships Section -->
+  <section class="py-16 md:py-24 bg-ola-purple-50/50 border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">Institutional Alliances</span>
+        <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mt-1">
+          Collaborating with Global Academic Leaders
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          Securing dual enrollment acceleration, college credit transfer, and gold-standard evaluation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Carnegie Mellon -->
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm reveal delay-100">
+          <div class="w-12 h-12 rounded-xl bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center mb-6">
+            <i data-lucide="book-open" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-heading font-bold text-slate-900 mb-1">Carnegie Mellon University (CMU)</h3>
+          <div class="text-xs font-bold text-ola-gold-700 mb-3">School of Computer Science & College of Fine Arts</div>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+            OLA is collaborating with CMU’s world-renowned faculties to allow students to take courses that transfer and count as equivalent to college credits. This proof of concept is expanding to CMU-Africa College of Engineering and leading Historically Black Colleges and Universities (HBCUs).
+          </p>
+          <span class="text-xs font-semibold text-ola-purple-800">Dual Enrollment Credit Transfer Model</span>
+        </div>
+
+        <!-- Columbia Teachers College IUME -->
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm reveal delay-200">
+          <div class="w-12 h-12 rounded-xl bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center mb-6">
+            <i data-lucide="check-circle" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-heading font-bold text-slate-900 mb-1">Columbia University Teachers College</h3>
+          <div class="text-xs font-bold text-ola-gold-700 mb-3">Edmund Gordon Institute (IUME)</div>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+            Enlisted the Edmund Gordon Institute for Urban and Minority Education (IUME) at Columbia University to enrich, monitor, and evaluate OLA’s capacity to administer college-level courses in strict alignment with international accreditation standards.
+          </p>
+          <span class="text-xs font-semibold text-ola-purple-800">Rigorous Monitoring & Evaluation Framework</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pilot Cohort & STEAAM Teachers Corps Binding Accord -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6 reveal">
+          <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">2026 Pilot & Sustainable Multiplier</span>
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900">
+            The 2026 Pilot of 15 Scholars & The STEAAM Teachers Corps
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            As a learning organization, OLA begins in <strong>2026 with a pilot of 15 resident scholars</strong> at its Lagos Free Zone campus in Ibeju-Lekki.
+          </p>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Upon completing two years of intensive pre-tertiary STEAAM preparation, students transfer their college-equivalent credits to accelerate their bachelor’s degrees abroad.
+          </p>
+          
+          <div class="p-6 bg-ola-purple-50 rounded-2xl border border-ola-purple-200">
+            <h4 class="font-heading font-bold text-ola-purple-900 text-sm mb-1">The Service & Leadership Accord</h4>
+            <p class="text-xs text-slate-700 leading-relaxed italic">
+              “Beneficiaries sign a binding agreement with OLA to return to Nigeria after studying abroad to serve in the OLA STEAAM Teachers Corps (fulfilling their NYSC obligation) and undertake graduate studies in STEAAM to mentor the next generation.”
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 reveal-right">
+          <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+            <img src="assets/images/students-group-2.jpeg" alt="OLA Scholars in Seminar" class="w-full h-[380px] object-cover">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ola-purple-950 text-slate-400 pt-16 pb-12 border-t border-ola-purple-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-8 h-8 rounded object-cover">
+          <span class="font-bold text-white">Odiso Leadership Academy (OLA)</span>
+        </div>
+        <div>Lagos Free Zone, Ibeju-Lekki, Lagos State &middot; &copy; 2026 OLA. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus & Inquiries | Odiso Leadership Academy</title>
+  <meta name="description" content="Contact Odiso Leadership Academy at our Lagos Free Zone campus in Ibeju-Lekki, Lagos State. Inquiries for candidate nomination, university partnerships, and FAQs.">
+  
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ola: {
+              purple: {
+                950: '#14021F',
+                900: '#240536',
+                850: '#2E0A42',
+                800: '#3E0957',
+                700: '#561077',
+                600: '#73199D',
+                500: '#9425C5',
+                200: '#E9D5FF',
+                100: '#F3E8FF',
+                50: '#FAF5FF',
+              },
+              gold: {
+                800: '#804E08',
+                700: '#97611A',
+                600: '#B87B24',
+                500: '#D99B4C',
+                400: '#EBB46E',
+                300: '#F5CE98',
+                200: '#FDE68A',
+                100: '#FEF3C7',
+                50: '#FFFDF5',
+              },
+              alabaster: '#FAF9F6',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-ola-alabaster text-slate-800 antialiased selection:bg-ola-gold-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-ola-purple-950 text-white text-xs py-2 px-4 border-b border-ola-purple-900/60">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <span class="text-slate-300">A Registered Not-for-Profit Education Equity Startup School</span>
+      <span class="text-ola-gold-400 font-medium">Lagos Free Zone, Ibeju-Lekki</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden shadow-md border border-ola-purple-800/20 group-hover:scale-105 transition-transform">
+            <img src="assets/images/logo.jpeg" alt="Odiso Leadership Academy Crest" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <span class="block font-heading font-extrabold text-xl tracking-tight text-ola-purple-950 leading-tight">ODISO</span>
+            <span class="block text-[11px] font-medium tracking-widest text-ola-gold-700 uppercase">Leadership Academy</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-700">
+          <a href="index.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Home</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">About & Context</a>
+          <a href="academics.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Life at Odiso</a>
+          <a href="admissions.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg text-ola-purple-800 font-semibold bg-ola-purple-50">Campus</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-3">
+          <a href="admissions.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-ola-purple-800 hover:bg-ola-purple-900 shadow-md">
+            Nominate a Scholar
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+    <div class="fixed right-0 top-0 bottom-0 w-5/6 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+          <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-10 h-10 rounded-lg object-cover">
+          <button id="mobile-menu-close" class="p-2 text-slate-500"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <nav class="mt-6 flex flex-col space-y-1 text-sm font-medium">
+          <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Home</a>
+          <a href="about.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">About & Context</a>
+          <a href="academics.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Life at Odiso</a>
+          <a href="admissions.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-4 py-3 rounded-xl bg-ola-purple-50 text-ola-purple-900 font-semibold">Campus</a>
+        </nav>
+      </div>
+      <a href="admissions.html" class="w-full py-3 text-center rounded-xl font-semibold text-white bg-ola-purple-800">Nominate a Scholar (100% Free)</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="py-16 bg-ola-purple-950 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-400">Campus & Partnerships</span>
+        <h1 class="text-3xl sm:text-5xl font-heading font-extrabold text-white mt-3">
+          Campus & <span class="gold-text-gradient">Partnership Inquiries</span>
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base mt-4 leading-relaxed">
+          Connect with our administration at Lagos Free Zone, Ibeju-Lekki regarding candidate nominations, university dual-credit alliances, and philanthropy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus and Inquiry Form Grid -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Campus Details -->
+        <div class="lg:col-span-5 space-y-6 reveal">
+          <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">Official Facility</span>
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900">
+            Lagos Free Zone Campus
+          </h2>
+          
+          <div class="space-y-6 pt-2">
+            <!-- Lagos Free Zone -->
+            <div class="p-6 rounded-2xl bg-ola-purple-50/70 border border-ola-purple-100">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-8 h-8 rounded-lg bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                </div>
+                <h3 class="font-heading font-bold text-base text-slate-900">Sole Current Campus</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Lagos Free Zone, Ibeju-Lekki, Lagos State, Nigeria</p>
+              <div class="mt-3 text-xs text-ola-purple-900 font-semibold">2026 Residential Pilot Facility (15 Resident Scholars)</div>
+            </div>
+
+            <!-- Email & Direct Line -->
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 space-y-2 text-xs">
+              <h4 class="font-heading font-bold text-sm text-slate-900 mb-1">Direct Contacts</h4>
+              <div>General & Partnership Inquiries: <a href="mailto:info@odisoacademy.edu.ng" class="text-ola-purple-800 font-medium hover:underline">info@odisoacademy.edu.ng</a></div>
+              <div>State Nominations Office: <a href="mailto:nominations@odisoacademy.edu.ng" class="text-ola-purple-800 font-medium hover:underline">nominations@odisoacademy.edu.ng</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Inquiry Form -->
+        <div class="lg:col-span-7 reveal-right">
+          <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-xl">
+            <h3 class="font-heading font-bold text-lg text-slate-900 mb-6">Send an Inquiry or Partnership Proposal</h3>
+            
+            <form data-ola-form class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Your Name *</label>
+                  <input type="text" required placeholder="Full name" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
+                  <input type="email" required placeholder="email@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Inquiry Purpose</label>
+                <select class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800">
+                  <option value="nomination">Scholar Candidate Nomination (36 States)</option>
+                  <option value="university">University Dual-Credit Alliance (CMU/HBCU/International)</option>
+                  <option value="philanthropy">Philanthropic Endowment / Sponsor Cohort</option>
+                  <option value="general">General Academy Inquiry</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Message *</label>
+                <textarea rows="4" required placeholder="How would you like to collaborate with Odiso Leadership Academy?" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-ola-purple-800 hover:bg-ola-purple-900 shadow-md hover:shadow-lg transition-all">
+                Submit Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="py-16 md:py-24 bg-ola-purple-50/50 border-t border-slate-200/80">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">Clear Answers</span>
+        <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mt-1">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4" data-accordion-group>
+        
+        <!-- FAQ 1 -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm reveal delay-100">
+          <button data-accordion-toggle="faq-1" class="w-full px-6 py-5 text-left font-heading font-bold text-sm sm:text-base text-slate-900 flex justify-between items-center">
+            <span>Is there any payment required for admission or tuition?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 accordion-icon transition-transform duration-200"></i>
+          </button>
+          <div id="faq-1" data-accordion-content class="px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+            <strong>No. Admission is 100% free of charge.</strong> There are zero application, tuition, laboratory, examination, or boarding fees. All scholars receive complete full sponsorship covering room, board, laptops, and college credit courses.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm reveal delay-150">
+          <button data-accordion-toggle="faq-2" class="w-full px-6 py-5 text-left font-heading font-bold text-sm sm:text-base text-slate-900 flex justify-between items-center">
+            <span>How are students selected across Nigeria's 36 states?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 accordion-icon transition-transform duration-200"></i>
+          </button>
+          <div id="faq-2" data-accordion-content class="px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+            Girls from each of Nigeria’s 36 states are selected based on financial status, targeting deserving girls documented in Nigeria’s Social Register (NSR). OLA is the sole not-for-profit non-parochial education equity school equipping this vulnerable demographic to excel in STEAAM.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm reveal delay-200">
+          <button data-accordion-toggle="faq-3" class="w-full px-6 py-5 text-left font-heading font-bold text-sm sm:text-base text-slate-900 flex justify-between items-center">
+            <span>How does the dual enrollment college credit model work?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 accordion-icon transition-transform duration-200"></i>
+          </button>
+          <div id="faq-3" data-accordion-content class="px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+            OLA is collaborating with Carnegie Mellon University (CMU) School of Computer Science & College of Fine Arts, CMU-Africa, and leading HBCUs to offer courses that transfer as equivalent college credits. The program is monitored and evaluated by the Edmund Gordon Institute for Urban and Minority Education (IUME) at Columbia University Teachers College.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm reveal delay-250">
+          <button data-accordion-toggle="faq-4" class="w-full px-6 py-5 text-left font-heading font-bold text-sm sm:text-base text-slate-900 flex justify-between items-center">
+            <span>What is the OLA STEAAM Teachers Corps return agreement?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 accordion-icon transition-transform duration-200"></i>
+          </button>
+          <div id="faq-4" data-accordion-content class="px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+            Beneficiaries sign a binding agreement to return to Nigeria after completing their bachelor’s degrees abroad to serve in the OLA STEAAM Teachers Corps (fulfilling their NYSC obligation) and undertake graduate studies in STEAAM to mentor future cohorts.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm reveal delay-300">
+          <button data-accordion-toggle="faq-5" class="w-full px-6 py-5 text-left font-heading font-bold text-sm sm:text-base text-slate-900 flex justify-between items-center">
+            <span>Where is the academy campus located?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 accordion-icon transition-transform duration-200"></i>
+          </button>
+          <div id="faq-5" data-accordion-content class="px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+            Our only current campus location is at <strong>Lagos Free Zone, Ibeju-Lekki, Lagos State, Nigeria</strong>, where the 2026 pilot of 15 resident students will be housed and taught.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ola-purple-950 text-slate-400 pt-16 pb-12 border-t border-ola-purple-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-8 h-8 rounded object-cover">
+          <span class="font-bold text-white">Odiso Leadership Academy (OLA)</span>
+        </div>
+        <div>Lagos Free Zone, Ibeju-Lekki &middot; &copy; 2026 OLA. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

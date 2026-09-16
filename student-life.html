@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life at Odiso | Residential Community at Lagos Free Zone</title>
+  <meta name="description" content="Explore residential life, sisterhood, wellness, and laboratory spaces at Odiso Leadership Academy's Lagos Free Zone campus in Ibeju-Lekki.">
+  
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ola: {
+              purple: {
+                950: '#14021F',
+                900: '#240536',
+                850: '#2E0A42',
+                800: '#3E0957',
+                700: '#561077',
+                600: '#73199D',
+                500: '#9425C5',
+                200: '#E9D5FF',
+                100: '#F3E8FF',
+                50: '#FAF5FF',
+              },
+              gold: {
+                800: '#804E08',
+                700: '#97611A',
+                600: '#B87B24',
+                500: '#D99B4C',
+                400: '#EBB46E',
+                300: '#F5CE98',
+                200: '#FDE68A',
+                100: '#FEF3C7',
+                50: '#FFFDF5',
+              },
+              alabaster: '#FAF9F6',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-ola-alabaster text-slate-800 antialiased selection:bg-ola-gold-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-ola-purple-950 text-white text-xs py-2 px-4 border-b border-ola-purple-900/60">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <span class="text-slate-300">2026 Residential Pilot Cohort (15 Scholars) · Lagos Free Zone, Ibeju-Lekki</span>
+      <span class="text-emerald-400 font-medium">100% Fully Funded</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden shadow-md border border-ola-purple-800/20 group-hover:scale-105 transition-transform">
+            <img src="assets/images/logo.jpeg" alt="Odiso Leadership Academy Crest" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <span class="block font-heading font-extrabold text-xl tracking-tight text-ola-purple-950 leading-tight">ODISO</span>
+            <span class="block text-[11px] font-medium tracking-widest text-ola-gold-700 uppercase">Leadership Academy</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-700">
+          <a href="index.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Home</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">About & Context</a>
+          <a href="academics.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-3 py-2 rounded-lg text-ola-purple-800 font-semibold bg-ola-purple-50">Life at Odiso</a>
+          <a href="admissions.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Campus</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-3">
+          <a href="admissions.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-ola-purple-800 hover:bg-ola-purple-900 shadow-md">
+            Nominate a Scholar
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+    <div class="fixed right-0 top-0 bottom-0 w-5/6 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+          <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-10 h-10 rounded-lg object-cover">
+          <button id="mobile-menu-close" class="p-2 text-slate-500"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <nav class="mt-6 flex flex-col space-y-1 text-sm font-medium">
+          <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Home</a>
+          <a href="about.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">About & Context</a>
+          <a href="academics.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-4 py-3 rounded-xl bg-ola-purple-50 text-ola-purple-900 font-semibold">Life at Odiso</a>
+          <a href="admissions.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Campus</a>
+        </nav>
+      </div>
+      <a href="admissions.html" class="w-full py-3 text-center rounded-xl font-semibold text-white bg-ola-purple-800">Nominate a Scholar (100% Free)</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="py-16 bg-ola-purple-950 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-400">Residential Pilot Life</span>
+        <h1 class="text-3xl sm:text-5xl font-heading font-extrabold text-white mt-3">
+          Life at <span class="gold-text-gradient">Lagos Free Zone</span>
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base mt-4 leading-relaxed">
+          A fully immersive, safe, and technologically advanced residential haven where scholars learn, innovate, and forge lifelong sisterhood.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Slideshow Section -->
+  <section class="py-16 md:py-24 bg-white" aria-label="Life at Odiso Showcase">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">Campus Moments</span>
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mt-1">Inside the OLA Learning Community</h2>
+        </div>
+        <div class="flex items-center gap-3">
+          <button data-carousel-prev class="w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition-all">
+            <i data-lucide="chevron-left" class="w-5 h-5"></i>
+          </button>
+          <button data-carousel-next class="w-10 h-10 rounded-full bg-ola-purple-800 hover:bg-ola-purple-900 text-white flex items-center justify-center transition-all shadow-md">
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="life-slideshow" class="relative overflow-hidden rounded-3xl border border-slate-200 shadow-xl reveal">
+        <div class="carousel-track flex">
+          
+          <div class="carousel-slide relative h-[420px] sm:h-[500px]">
+            <img src="assets/images/students-cohort.jpeg" alt="OLA Scholars Cohort" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-ola-purple-950/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white max-w-xl">
+              <span class="inline-block px-3 py-1 rounded-full bg-ola-gold-500 text-ola-purple-950 text-xs font-bold mb-2">Cohort Sisterhood</span>
+              <h3 class="text-xl sm:text-2xl font-heading font-bold">Uniting 36 States in a Shared Vision for Africa</h3>
+            </div>
+          </div>
+
+          <div class="carousel-slide relative h-[420px] sm:h-[500px]">
+            <img src="assets/images/campus-learning.jpeg" alt="Classroom Discussion" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-ola-purple-950/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white max-w-xl">
+              <span class="inline-block px-3 py-1 rounded-full bg-ola-gold-500 text-ola-purple-950 text-xs font-bold mb-2">Dual Credit Laboratories</span>
+              <h3 class="text-xl sm:text-2xl font-heading font-bold">Hands-On Computer Science & Research</h3>
+            </div>
+          </div>
+
+          <div class="carousel-slide relative h-[420px] sm:h-[500px]">
+            <img src="assets/images/students-group-1.jpeg" alt="Debate & Leadership Group" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-ola-purple-950/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white max-w-xl">
+              <span class="inline-block px-3 py-1 rounded-full bg-ola-gold-500 text-ola-purple-950 text-xs font-bold mb-2">Leadership & Policy</span>
+              <h3 class="text-xl sm:text-2xl font-heading font-bold">Preparing Future Women Leaders in Governance</h3>
+            </div>
+          </div>
+
+          <div class="carousel-slide relative h-[420px] sm:h-[500px]">
+            <img src="assets/images/student-portrait.jpeg" alt="Individual Poise and Confidence" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-ola-purple-950/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white max-w-xl">
+              <span class="inline-block px-3 py-1 rounded-full bg-ola-gold-500 text-ola-purple-950 text-xs font-bold mb-2">Teachers Corps Mentorship</span>
+              <h3 class="text-xl sm:text-2xl font-heading font-bold">Cultivating Poise and Lifelong Commitment to Nigeria</h3>
+            </div>
+          </div>
+
+        </div>
+        <div class="absolute bottom-4 right-6 z-10 flex items-center gap-2" data-carousel-indicators></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pillars of Residential Life -->
+  <section class="py-16 md:py-24 bg-ola-purple-50/50 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">Holistic Care</span>
+        <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mt-1">Fully Supported Residential Living</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm reveal delay-100">
+          <div class="w-10 h-10 rounded-xl bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center mb-4">
+            <i data-lucide="home" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Lagos Free Zone Residence</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Secure, state-of-the-art living quarters with high-speed internet, nutritional meal plans, and 24/7 power in Ibeju-Lekki.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm reveal delay-200">
+          <div class="w-10 h-10 rounded-xl bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center mb-4">
+            <i data-lucide="heart" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Health, Wellness & Counseling</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Full medical coverage, trauma-informed psychosocial counseling, and physical wellness programs for every scholar.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm reveal delay-300">
+          <div class="w-10 h-10 rounded-xl bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center mb-4">
+            <i data-lucide="repeat" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">STEAAM Teachers Corps</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Building an enduring sisterhood where graduating scholars return to mentor younger girls from their home states.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ola-purple-950 text-slate-400 pt-16 pb-12 border-t border-ola-purple-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-8 h-8 rounded object-cover">
+          <span class="font-bold text-white">Odiso Leadership Academy (OLA)</span>
+        </div>
+        <div>Lagos Free Zone, Ibeju-Lekki &middot; &copy; 2026 OLA. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

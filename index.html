@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odiso Leadership Academy (OLA) | 100% Fully-Funded Female STEAAM Pre-Tertiary School</title>
+  <meta name="description" content="Odiso Leadership Academy (OLA) is a female-led not-for-profit college-and-career preparedness startup school in Lagos Free Zone, Ibeju-Lekki, empowering talented deserving girls from Nigeria's 36 states with 100% free education.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ola: {
+              purple: {
+                950: '#14021F',
+                900: '#240536',
+                850: '#2E0A42',
+                800: '#3E0957',
+                700: '#561077',
+                600: '#73199D',
+                500: '#9425C5',
+                200: '#E9D5FF',
+                100: '#F3E8FF',
+                50: '#FAF5FF',
+              },
+              gold: {
+                800: '#804E08',
+                700: '#97611A',
+                600: '#B87B24',
+                500: '#D99B4C',
+                400: '#EBB46E',
+                300: '#F5CE98',
+                200: '#FDE68A',
+                100: '#FEF3C7',
+                50: '#FFFDF5',
+              },
+              alabaster: '#FAF9F6',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-ola-alabaster text-slate-800 antialiased selection:bg-ola-gold-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-ola-purple-950 text-white text-xs py-2 px-4 border-b border-ola-purple-900/60">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500 text-slate-950 uppercase tracking-wider">100% Free Tuition</span>
+        <span class="text-slate-300">2026 Pilot Cohort: 15 fully-funded resident scholars from Nigeria’s 36 states.</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <span class="flex items-center gap-1 text-ola-gold-400 font-medium">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Lagos Free Zone, Ibeju-Lekki
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logo & Brand Crest -->
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden shadow-md border border-ola-purple-800/20 group-hover:scale-105 transition-transform">
+            <img src="assets/images/logo.jpeg" alt="Odiso Leadership Academy Crest" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <span class="block font-heading font-extrabold text-xl tracking-tight text-ola-purple-950 leading-tight">ODISO</span>
+            <span class="block text-[11px] font-medium tracking-widest text-ola-gold-700 uppercase">Leadership Academy</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-700">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-ola-purple-800 font-semibold bg-ola-purple-50">Home</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">About & Context</a>
+          <a href="academics.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Life at Odiso</a>
+          <a href="admissions.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Campus</a>
+        </nav>
+
+        <!-- CTA Action -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="admissions.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-ola-purple-800 hover:bg-ola-purple-900 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+            Nominate a Scholar
+            <i data-lucide="arrow-up-right" class="w-4 h-4 ml-1.5"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Toggle -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" type="button" class="p-2.5 rounded-lg text-slate-700 hover:text-ola-purple-800 hover:bg-slate-100" aria-label="Toggle navigation">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+    <div class="fixed right-0 top-0 bottom-0 w-5/6 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-10 h-10 rounded-lg object-cover">
+            <div>
+              <span class="font-heading font-bold text-lg text-ola-purple-950">ODISO</span>
+              <span class="block text-[10px] tracking-wider text-ola-gold-600 uppercase">Leadership Academy</span>
+            </div>
+          </div>
+          <button id="mobile-menu-close" class="p-2 rounded-lg text-slate-500 hover:bg-slate-100">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <nav class="mt-6 flex flex-col space-y-1">
+          <a href="index.html" class="px-4 py-3 rounded-xl bg-ola-purple-50 text-ola-purple-900 font-semibold">Home</a>
+          <a href="about.html" class="px-4 py-3 rounded-xl text-slate-700 hover:bg-slate-50 font-medium">About & Context</a>
+          <a href="academics.html" class="px-4 py-3 rounded-xl text-slate-700 hover:bg-slate-50 font-medium">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-4 py-3 rounded-xl text-slate-700 hover:bg-slate-50 font-medium">Life at Odiso</a>
+          <a href="admissions.html" class="px-4 py-3 rounded-xl text-slate-700 hover:bg-slate-50 font-medium">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-4 py-3 rounded-xl text-slate-700 hover:bg-slate-50 font-medium">Campus & Inquiries</a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-slate-100">
+        <a href="admissions.html" class="w-full flex items-center justify-center py-3 px-4 rounded-xl font-semibold text-white bg-ola-purple-800 shadow-md">
+          Nominate a Scholar (100% Free)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden purple-hero-gradient text-white">
+    <div class="absolute inset-0 subtle-grid opacity-15"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-medium text-ola-gold-300 hero-animate">
+            <i data-lucide="award" class="w-3.5 h-3.5 text-ola-gold-400"></i>
+            <span>Advancing UN SDGs #4 (Quality Education) & #5 (Gender Equality)</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight leading-[1.12] hero-animate hero-delay-1">
+            Equipping girls to <br>
+            <span class="gold-text-gradient">Lead Global STEAAM</span>
+          </h1>
+
+          <p class="text-slate-200 text-base sm:text-lg lg:text-xl font-light leading-relaxed max-w-2xl hero-animate hero-delay-2">
+            Nigeria's premier female-led, not-for-profit education equity startup school in Lagos Free Zone, Ibeju-Lekki. We provide <strong>100% free residential education</strong> with transferable college credits from world-class institutions like Carnegie Mellon University.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2 hero-animate hero-delay-3">
+            <a href="admissions.html" class="inline-flex items-center justify-center px-6 py-3.5 rounded-full font-semibold text-ola-purple-950 bg-ola-gold-500 hover:bg-ola-gold-400 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+              100% Free Admission Criteria
+              <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+            </a>
+            <a href="about.html" class="inline-flex items-center justify-center px-6 py-3.5 rounded-full font-medium text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all">
+              Our Equity Mission & Partners
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/15 hero-animate hero-delay-4 max-w-lg">
+            <div>
+              <div class="text-2xl sm:text-3xl font-heading font-extrabold text-ola-gold-400">₦0 Fee</div>
+              <div class="text-xs text-slate-300 mt-0.5">100% Free Tuition & Board</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-heading font-extrabold text-ola-gold-400">36 States</div>
+              <div class="text-xs text-slate-300 mt-0.5">National Equity Quota</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-heading font-extrabold text-ola-gold-400">15 Scholars</div>
+              <div class="text-xs text-slate-300 mt-0.5">2026 Pilot Cohort</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Featured Imagery Card -->
+        <div class="lg:col-span-5 hero-animate hero-delay-2">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20 group">
+              <img src="assets/images/students-cohort.jpeg" alt="Odiso Leadership Academy Scholars" class="w-full h-[430px] object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-ola-purple-950/90 via-ola-purple-950/20 to-transparent"></div>
+              
+              <!-- Floating Card Details -->
+              <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl glass-card-dark text-white">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-9 h-9 rounded-lg object-cover">
+                    <div>
+                      <div class="text-xs font-semibold text-ola-gold-400">Post-Secondary Pre-Tertiary</div>
+                      <div class="text-sm font-bold">Lagos Free Zone, Ibeju-Lekki</div>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center px-2 py-1 rounded bg-emerald-500/20 text-emerald-300 text-[11px] font-bold border border-emerald-500/30">Free Admission</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Grounding Context & National Impact (Tidy Data Banner) -->
+  <section class="py-12 bg-ola-purple-950 text-white border-y border-ola-purple-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-400">The Urgent Challenge</span>
+          <h2 class="text-xl sm:text-2xl font-heading font-bold text-white mt-1">Bridging Nigeria’s Education & Gender Equity Gap</h2>
+        </div>
+
+        <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+            <div class="text-2xl font-heading font-extrabold text-ola-gold-400">0.7%</div>
+            <p class="text-xs text-slate-300 mt-1">Of the 4.4M young females (aged 14–24) in Nigeria's Social Register (NSR) have tertiary education.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+            <div class="text-2xl font-heading font-extrabold text-ola-gold-400">15M+</div>
+            <p class="text-xs text-slate-300 mt-1">Out-of-school children in Nigeria—disproportionately female—constraining human capital.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+            <div class="text-2xl font-heading font-extrabold text-ola-gold-400">1-in-10</div>
+            <p class="text-xs text-slate-300 mt-1">Global births by 2050 will be Nigerian (UNICEF). OLA prepares girls to lead this future.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Clean Value Pillars Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">The OLA Venture Model</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-slate-900 mt-2">
+          Transforming Vulnerability into Global Innovation
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          OLA is the sole not-for-profit non-parochial private education equity school in Nigeria equipping the most promising girls to compete in technology and entrepreneurship.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Dual Enrollment -->
+        <div class="p-8 rounded-2xl bg-ola-purple-50/60 border border-ola-purple-100 hover-lift reveal delay-100">
+          <div class="w-12 h-12 rounded-xl bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center mb-6 shadow-md">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-heading font-bold text-slate-900 mb-2">Dual Enrollment College Credits</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Curriculum aligned with Carnegie Mellon University (CMU) and leading HBCUs, allowing students to earn transferable credits toward their bachelor’s degrees.
+          </p>
+          <a href="academics.html" class="inline-flex items-center text-xs font-bold text-ola-purple-800 hover:text-ola-purple-950">
+            Explore Dual Credits <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
+          </a>
+        </div>
+
+        <!-- Card 2: 100% Free Social Register Selection -->
+        <div class="p-8 rounded-2xl bg-ola-purple-50/60 border border-ola-purple-100 hover-lift reveal delay-200">
+          <div class="w-12 h-12 rounded-xl bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center mb-6 shadow-md">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-heading font-bold text-slate-900 mb-2">100% Free 36-State Equity</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            No tuition or boarding fees. Talented girls from each Nigerian state are selected through Nigeria's National Social Register (NSR) on financial equity.
+          </p>
+          <a href="admissions.html" class="inline-flex items-center text-xs font-bold text-ola-purple-800 hover:text-ola-purple-950">
+            Admissions Process <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
+          </a>
+        </div>
+
+        <!-- Card 3: STEAAM Teachers Corps -->
+        <div class="p-8 rounded-2xl bg-ola-purple-50/60 border border-ola-purple-100 hover-lift reveal delay-300">
+          <div class="w-12 h-12 rounded-xl bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center mb-6 shadow-md">
+            <i data-lucide="repeat" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-heading font-bold text-slate-900 mb-2">STEAAM Teachers Corps</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Graduates hold a binding agreement to return to Nigeria to serve as educators (fulfilling NYSC) and pursue graduate degrees to uplift future generations.
+          </p>
+          <a href="about.html" class="inline-flex items-center text-xs font-bold text-ola-purple-800 hover:text-ola-purple-950">
+            Our Vision & Accord <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Slideshow Section: "Life at Odiso" -->
+  <section class="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden" aria-label="Life at Odiso Slideshow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-400">Pilot Cohort Environment</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white mt-1">
+            Life Inside Odiso Academy
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-xl">
+            A serene, world-class residential environment at Lagos Free Zone, Ibeju-Lekki designed for deep inquiry, coding, debate, and collaborative innovation.
+          </p>
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <div class="flex items-center gap-3">
+          <button data-carousel-prev class="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 flex items-center justify-center text-white transition-all">
+            <i data-lucide="chevron-left" class="w-5 h-5"></i>
+          </button>
+          <button data-carousel-next class="w-11 h-11 rounded-full bg-ola-gold-500 hover:bg-ola-gold-400 text-ola-purple-950 flex items-center justify-center font-bold transition-all shadow-md">
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Slideshow Container -->
+      <div id="life-slideshow" class="relative overflow-hidden rounded-3xl border border-white/10 shadow-2xl reveal">
+        <div class="carousel-track flex">
+          
+          <!-- Slide 1 -->
+          <div class="carousel-slide relative h-[440px] sm:h-[520px]">
+            <img src="assets/images/campus-learning.jpeg" alt="Interactive STEAAM Classrooms" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-ola-purple-950/95 via-ola-purple-950/30 to-transparent"></div>
+            <div class="absolute bottom-8 left-8 right-8 max-w-2xl">
+              <span class="inline-block px-3 py-1 rounded-full bg-ola-gold-500/90 text-ola-purple-950 text-xs font-bold mb-2">Dual Credit Computing</span>
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white mb-2">College-Level Computer Science & Research</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">Students engage in algorithmic thinking, data structures, and software engineering aligned with CMU standards.</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide relative h-[440px] sm:h-[520px]">
+            <img src="assets/images/students-group-1.jpeg" alt="Leadership & Debate Seminars" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-ola-purple-950/95 via-ola-purple-950/30 to-transparent"></div>
+            <div class="absolute bottom-8 left-8 right-8 max-w-2xl">
+              <span class="inline-block px-3 py-1 rounded-full bg-ola-gold-500/90 text-ola-purple-950 text-xs font-bold mb-2">Leadership & Policy</span>
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white mb-2">Ethics, Governance & Pan-African Vision</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">Regular roundtable seminars prepare young women to address complex socioeconomic challenges across Nigeria and Africa.</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide relative h-[440px] sm:h-[520px]">
+            <img src="assets/images/students-group-2.jpeg" alt="Collaborative Research Cohort" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-ola-purple-950/95 via-ola-purple-950/30 to-transparent"></div>
+            <div class="absolute bottom-8 left-8 right-8 max-w-2xl">
+              <span class="inline-block px-3 py-1 rounded-full bg-ola-gold-500/90 text-ola-purple-950 text-xs font-bold mb-2">Agribusiness & Biotech</span>
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white mb-2">Precision Farming & Food Security Innovation</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">With 22% of Nigerian women working in agriculture, OLA teaches modern biotechnology and agribusiness venture creation.</p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-slide relative h-[440px] sm:h-[520px]">
+            <img src="assets/images/student-portrait.jpeg" alt="Individual Mentorship and Poise" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-ola-purple-950/95 via-ola-purple-950/30 to-transparent"></div>
+            <div class="absolute bottom-8 left-8 right-8 max-w-2xl">
+              <span class="inline-block px-3 py-1 rounded-full bg-ola-gold-500/90 text-ola-purple-950 text-xs font-bold mb-2">Mentorship & Character</span>
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white mb-2">Nurturing Poise, Ambition, and Integrity</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">Monitored and evaluated by Columbia University Teachers College IUME to ensure gold-standard academic and holistic care.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slideshow Indicators -->
+        <div class="absolute bottom-4 right-8 z-10 flex items-center gap-2" data-carousel-indicators></div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Institutional Partners & Dual Enrollment Acceleration -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">Academic Alliances</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-slate-900 mt-1">
+          High-Capacity Global Partners
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          Collaborating with premier international universities and research institutes to secure college credit transfer and academic evaluation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-ola-purple-50/50 border border-ola-purple-100 reveal delay-100">
+          <div class="font-heading font-bold text-lg text-ola-purple-900 mb-1">Carnegie Mellon University</div>
+          <div class="text-xs font-semibold text-ola-gold-700 mb-3">School of Computer Science & College of Fine Arts</div>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Collaborating to allow OLA scholars to take transfer-equivalent college credits, expanding to CMU-Africa College of Engineering and leading HBCUs.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-ola-purple-50/50 border border-ola-purple-100 reveal delay-200">
+          <div class="font-heading font-bold text-ola-purple-900 text-lg mb-1">Columbia University Teachers College</div>
+          <div class="text-xs font-semibold text-ola-gold-700 mb-3">Edmund Gordon Institute (IUME)</div>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Enlisted to enrich, monitor, and evaluate OLA’s capacity to administer college-level courses in tune with global accreditation standards.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-ola-purple-50/50 border border-ola-purple-100 reveal delay-300">
+          <div class="font-heading font-bold text-ola-purple-900 text-lg mb-1">IRAWCC Research Council</div>
+          <div class="text-xs font-semibold text-ola-gold-700 mb-3">Institute for Research on African Women, Children & Culture</div>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Foundational non-profit partner providing institutional governance, cultural pedagogical grounding, and equity fellowship endowments.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Free Admissions 3-Step Selection Process -->
+  <section class="py-16 md:py-24 bg-ola-purple-50/50 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">100% Free Equity Admissions</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-slate-900 mt-2">
+          How Scholars Are Selected
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Admissions are strictly 100% free of charge. No tuition, exam, or boarding fees. Selected from Nigeria’s 36 states based on talent and financial need.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-8 rounded-2xl border border-slate-200/90 shadow-sm relative reveal delay-100">
+          <span class="text-4xl font-heading font-extrabold text-ola-purple-200 absolute top-6 right-6">01</span>
+          <div class="w-10 h-10 rounded-xl bg-ola-purple-800 text-white flex items-center justify-center font-bold text-sm mb-5">1</div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Social Register / State Nomination</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">Scholars are identified from the National Social Register (NSR) and underrepresented households across Nigeria’s 36 states.</p>
+          <span class="text-xs font-bold text-emerald-700">Zero application cost</span>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200/90 shadow-sm relative reveal delay-200">
+          <span class="text-4xl font-heading font-extrabold text-ola-purple-200 absolute top-6 right-6">02</span>
+          <div class="w-10 h-10 rounded-xl bg-ola-purple-800 text-white flex items-center justify-center font-bold text-sm mb-5">2</div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Aptitude & Problem-Solving</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">Talent assessment evaluating logical reasoning, passion for STEAAM, and commitment to community transformation.</p>
+          <span class="text-xs font-bold text-emerald-700">Conducted regionally</span>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200/90 shadow-sm relative reveal delay-300">
+          <span class="text-4xl font-heading font-extrabold text-ola-purple-200 absolute top-6 right-6">03</span>
+          <div class="w-10 h-10 rounded-xl bg-ola-purple-800 text-white flex items-center justify-center font-bold text-sm mb-5">3</div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">100% Free Admission & Boarding</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">Accepted scholars enter the 2-year residential program in Lagos Free Zone with all tuition, food, laptops, and labs covered.</p>
+          <span class="text-xs font-bold text-emerald-700">15 Resident Pilot Scholars (2026)</span>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="admissions.html" class="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white bg-ola-purple-800 hover:bg-ola-purple-900 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+          Check Eligibility & Nominate a Girl
+          <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clean Call to Action Banner -->
+  <section class="py-16 bg-ola-purple-950 text-white relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 reveal">
+      <h2 class="text-3xl sm:text-4xl font-heading font-bold mb-4">
+        Partner with Us to Expand Education Equity
+      </h2>
+      <p class="text-slate-300 text-base max-w-2xl mx-auto mb-8 leading-relaxed">
+        Join our coalition of university partners, philanthropists, and state education boards empowering Nigeria’s most brilliant deserving girls.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="admissions.html" class="px-8 py-3.5 rounded-full font-semibold text-ola-purple-950 bg-ola-gold-500 hover:bg-ola-gold-400 transition-all shadow-lg">
+          Nominate / Apply for 2026
+        </a>
+        <a href="contact.html" class="px-8 py-3.5 rounded-full font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all">
+          Contact Lagos Free Zone Campus
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Refined Minimal Footer -->
+  <footer class="bg-ola-purple-950 text-slate-400 pt-16 pb-12 border-t border-ola-purple-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-ola-purple-900/60">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-10 h-10 rounded-lg object-cover">
+            <div>
+              <span class="font-heading font-bold text-base text-white">ODISO</span>
+              <span class="block text-[10px] tracking-wider text-ola-gold-400 uppercase">Leadership Academy</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            The sole not-for-profit non-parochial education equity school equipping Nigeria's deserving girls with 100% free STEAAM pre-tertiary education.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="about.html" class="hover:text-ola-gold-400 transition-colors">About & Context</a></li>
+            <li><a href="academics.html" class="hover:text-ola-gold-400 transition-colors">Dual Enrollment STEAAM</a></li>
+            <li><a href="student-life.html" class="hover:text-ola-gold-400 transition-colors">Life at Odiso</a></li>
+            <li><a href="admissions.html" class="hover:text-ola-gold-400 transition-colors">Free Admissions & Aid</a></li>
+            <li><a href="contact.html" class="hover:text-ola-gold-400 transition-colors">Lagos Free Zone Campus</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Campus Location -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Sole Campus Location</h4>
+          <div class="space-y-2 text-xs">
+            <div class="font-semibold text-slate-200">Lagos Free Zone Campus</div>
+            <div class="text-slate-400 leading-relaxed">Ibeju-Lekki, Lagos State, Nigeria</div>
+            <div class="text-xs text-ola-gold-400 pt-1">2026 Residential Pilot Facility</div>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact & Partnerships -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Partnership & Inquiries</h4>
+          <div class="space-y-2 text-xs">
+            <div>Email: <a href="mailto:info@odisoacademy.edu.ng" class="text-slate-200 hover:text-ola-gold-400">info@odisoacademy.edu.ng</a></div>
+            <div>Institutional Partner: <span class="text-slate-200">IRAWCC Council</span></div>
+            <div>Dual Credits: <span class="text-slate-200">CMU & HBCU Alignment</span></div>
+            <div>Evaluation: <span class="text-slate-200">Columbia Teachers College IUME</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <div>&copy; 2026 Odiso Leadership Academy. A registered not-for-profit educational venture.</div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-slate-400">UN SDG #4 & #5 Alignment</a>
+          <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-400">IRAWCC Portal</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

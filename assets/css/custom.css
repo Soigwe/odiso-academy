@@ -1,0 +1,199 @@
+/* Odiso Leadership Academy - Custom Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --color-purple-950: #14021F;
+  --color-purple-900: #240536;
+  --color-purple-800: #3E0957;
+  --color-purple-700: #561077;
+  --color-purple-600: #73199D;
+  --color-gold-500: #D99B4C;
+  --color-gold-600: #B87B24;
+  --color-gold-400: #EBB46E;
+  --color-gold-100: #FEF3C7;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #1E293B;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', sans-serif;
+  text-wrap: balance;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.glass-card-dark {
+  background: rgba(26, 3, 39, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Gradients */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FDE68A 0%, #D99B4C 50%, #B87B24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple-hero-gradient {
+  background: radial-gradient(circle at 80% 20%, #561077 0%, #3E0957 40%, #14021F 100%);
+}
+
+.subtle-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Hero Load Animations (Immediate above-the-fold entrance) */
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-animate {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-delay-1 { animation-delay: 100ms; }
+.hero-delay-2 { animation-delay: 200ms; }
+.hero-delay-3 { animation-delay: 300ms; }
+.hero-delay-4 { animation-delay: 400ms; }
+
+/* Progressive Scroll Reveal System */
+.reveal, .reveal-left, .reveal-right, .reveal-scale {
+  opacity: 1;
+  transform: none;
+}
+
+html.js-ready .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.js-ready .reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html.js-ready .reveal-left {
+  opacity: 0;
+  transform: translateX(-22px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.js-ready .reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+html.js-ready .reveal-right {
+  opacity: 0;
+  transform: translateX(22px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.js-ready .reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+html.js-ready .reveal-scale {
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.js-ready .reveal-scale.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.delay-100 { transition-delay: 80ms; }
+.delay-150 { transition-delay: 140ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-250 { transition-delay: 260ms; }
+.delay-300 { transition-delay: 320ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Carousel / Slideshow Styles */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+}
+
+/* Custom Interactive Polish */
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -8px rgba(62, 9, 87, 0.12);
+}
+
+/* Clean Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

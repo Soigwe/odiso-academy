@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Admissions & 36-State Equity | Odiso Leadership Academy</title>
+  <meta name="description" content="100% free admission for deserving girls across Nigeria's 36 states at Odiso Leadership Academy. No tuition or boarding fees. Explore eligibility and nominate a scholar for the 2026 pilot cohort.">
+  
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ola: {
+              purple: {
+                950: '#14021F',
+                900: '#240536',
+                850: '#2E0A42',
+                800: '#3E0957',
+                700: '#561077',
+                600: '#73199D',
+                500: '#9425C5',
+                200: '#E9D5FF',
+                100: '#F3E8FF',
+                50: '#FAF5FF',
+              },
+              gold: {
+                800: '#804E08',
+                700: '#97611A',
+                600: '#B87B24',
+                500: '#D99B4C',
+                400: '#EBB46E',
+                300: '#F5CE98',
+                200: '#FDE68A',
+                100: '#FEF3C7',
+                50: '#FFFDF5',
+              },
+              alabaster: '#FAF9F6',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-ola-alabaster text-slate-800 antialiased selection:bg-ola-gold-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-ola-purple-950 text-white text-xs py-2 px-4 border-b border-ola-purple-900/60">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <span class="text-slate-300">100% Free Tuition & Residential Care · 2026 Pilot (15 Resident Scholars)</span>
+      <span class="text-ola-gold-400 font-medium">Lagos Free Zone, Ibeju-Lekki</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden shadow-md border border-ola-purple-800/20 group-hover:scale-105 transition-transform">
+            <img src="assets/images/logo.jpeg" alt="Odiso Leadership Academy Crest" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <span class="block font-heading font-extrabold text-xl tracking-tight text-ola-purple-950 leading-tight">ODISO</span>
+            <span class="block text-[11px] font-medium tracking-widest text-ola-gold-700 uppercase">Leadership Academy</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-700">
+          <a href="index.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Home</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">About & Context</a>
+          <a href="academics.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Life at Odiso</a>
+          <a href="admissions.html" class="px-3 py-2 rounded-lg text-ola-purple-800 font-semibold bg-ola-purple-50">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Campus</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#nominate" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-ola-purple-800 hover:bg-ola-purple-900 shadow-md">
+            Nominate a Scholar
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+    <div class="fixed right-0 top-0 bottom-0 w-5/6 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+          <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-10 h-10 rounded-lg object-cover">
+          <button id="mobile-menu-close" class="p-2 text-slate-500"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <nav class="mt-6 flex flex-col space-y-1 text-sm font-medium">
+          <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Home</a>
+          <a href="about.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">About & Context</a>
+          <a href="academics.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Life at Odiso</a>
+          <a href="admissions.html" class="px-4 py-3 rounded-xl bg-ola-purple-50 text-ola-purple-900 font-semibold">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Campus</a>
+        </nav>
+      </div>
+      <a href="#nominate" class="w-full py-3 text-center rounded-xl font-semibold text-white bg-ola-purple-800">Nominate a Scholar (100% Free)</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="py-16 bg-ola-purple-950 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-400">100% Free Education Equity</span>
+        <h1 class="text-3xl sm:text-5xl font-heading font-extrabold text-white mt-3">
+          Zero-Cost Admission for <br><span class="gold-text-gradient">Nigeria’s 36 States</span>
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base mt-4 leading-relaxed">
+          There are <strong>no application, tuition, or boarding fees</strong> at OLA. Talented girls from each state are selected based on financial status through Nigeria's Social Register (NSR).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 36-State Eligibility Evaluator -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: Equity Policy -->
+        <div class="lg:col-span-5 space-y-6 reveal">
+          <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">Admission Principles</span>
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900">
+            Dedicated to the Poorest of Poor Talented Girls
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Only 0.7% of the 4.4M young females aged 14–24 in Nigeria have tertiary education. OLA was established as a not-for-profit school to systematically shatter this barrier.
+          </p>
+          <div class="space-y-3 pt-2">
+            <div class="flex items-center gap-3 text-xs sm:text-sm text-slate-700">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span><strong>100% Free Tuition:</strong> All academic, dual-credit courses, and laboratory materials fully funded.</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs sm:text-sm text-slate-700">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span><strong>Full Residential Boarding:</strong> Housing, meals, health, and laptops provided at Lagos Free Zone.</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs sm:text-sm text-slate-700">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span><strong>National Quota:</strong> Scholars drawn from all 36 states and the FCT based on National Social Register (NSR) data.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Evaluator Card -->
+        <div class="lg:col-span-7 reveal-right">
+          <div class="p-8 rounded-3xl bg-ola-purple-50/70 border border-ola-purple-100 shadow-xl">
+            <h3 class="font-heading font-bold text-lg text-slate-900 mb-6 flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-5 h-5 text-ola-purple-800"></i>
+              <span>36-State Equity & Full Scholarship Evaluator</span>
+            </h3>
+
+            <div class="space-y-5">
+              
+              <!-- State Select -->
+              <div>
+                <label for="eval-state" class="block text-xs font-semibold text-slate-700 mb-2">State of Origin (Nigeria's 36 States + FCT)</label>
+                <select id="eval-state" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800 font-medium">
+                  <option value="">-- Select State --</option>
+                  <option value="Abia">Abia State</option>
+                  <option value="Adamawa">Adamawa State</option>
+                  <option value="Akwa Ibom">Akwa Ibom State</option>
+                  <option value="Anambra">Anambra State</option>
+                  <option value="Bauchi">Bauchi State</option>
+                  <option value="Bayelsa">Bayelsa State</option>
+                  <option value="Benue">Benue State</option>
+                  <option value="Borno">Borno State</option>
+                  <option value="Cross River">Cross River State</option>
+                  <option value="Delta">Delta State</option>
+                  <option value="Ebonyi">Ebonyi State</option>
+                  <option value="Edo">Edo State</option>
+                  <option value="Ekiti">Ekiti State</option>
+                  <option value="Enugu">Enugu State</option>
+                  <option value="FCT Abuja">Federal Capital Territory (Abuja)</option>
+                  <option value="Gombe">Gombe State</option>
+                  <option value="Imo">Imo State</option>
+                  <option value="Jigawa">Jigawa State</option>
+                  <option value="Kaduna">Kaduna State</option>
+                  <option value="Kano">Kano State</option>
+                  <option value="Katsina">Katsina State</option>
+                  <option value="Kebbi">Kebbi State</option>
+                  <option value="Kogi">Kogi State</option>
+                  <option value="Kwara">Kwara State</option>
+                  <option value="Lagos">Lagos State</option>
+                  <option value="Nasarawa">Nasarawa State</option>
+                  <option value="Niger">Niger State</option>
+                  <option value="Ogun">Ogun State</option>
+                  <option value="Ondo">Ondo State</option>
+                  <option value="Osun">Osun State</option>
+                  <option value="Oyo">Oyo State</option>
+                  <option value="Plateau">Plateau State</option>
+                  <option value="Rivers">Rivers State</option>
+                  <option value="Sokoto">Sokoto State</option>
+                  <option value="Taraba">Taraba State</option>
+                  <option value="Yobe">Yobe State</option>
+                  <option value="Zamfara">Zamfara State</option>
+                </select>
+              </div>
+
+              <!-- Socioeconomic Status -->
+              <div>
+                <label for="eval-background" class="block text-xs font-semibold text-slate-700 mb-2">Household Socioeconomic Verification</label>
+                <select id="eval-background" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800 font-medium">
+                  <option value="nsr">Household Documented in Nigeria's Social Register (NSR)</option>
+                  <option value="low-income">Verified Promising / Low-Income Household</option>
+                  <option value="community">Community / Faith-Based Organization Nomination</option>
+                </select>
+              </div>
+
+              <!-- Track of Interest -->
+              <div>
+                <label for="eval-track" class="block text-xs font-semibold text-slate-700 mb-2">Primary STEAAM Focus Track</label>
+                <select id="eval-track" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800 font-medium">
+                  <option value="cs">Computer Science & AI (Carnegie Mellon Dual Track)</option>
+                  <option value="bio">Biotechnology & Science Research</option>
+                  <option value="agri">Agribusiness & Precision Food Systems</option>
+                  <option value="arts">Fine Arts, Media & Pan-African Rhetoric</option>
+                </select>
+              </div>
+
+              <!-- Result Evaluation Card -->
+              <div id="eval-result-card" class="mt-6 p-6 rounded-2xl bg-ola-purple-950 text-white space-y-3 hidden">
+                <div id="eval-status-badge" class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                  ✓ 100% Fully-Funded Scholarship Eligible
+                </div>
+                <p id="eval-details-text" class="text-xs text-slate-300 leading-relaxed"></p>
+                <div class="pt-2 border-t border-ola-purple-900 text-[11px] text-ola-gold-400">
+                  Beneficiaries commit to return service in the OLA STEAAM Teachers Corps following tertiary graduation.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Nomination / Application Inquiry Form -->
+  <section id="nominate" class="py-16 md:py-24 bg-ola-purple-50/50 border-t border-slate-200/80">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">Candidate Nomination Portal</span>
+        <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mt-1">Nominate a Talented Scholar for 2026</h2>
+        <p class="text-slate-600 text-sm mt-2">Teachers, community leaders, and guardians can submit candidates. No application fees required.</p>
+      </div>
+
+      <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl reveal delay-100">
+        <form data-ola-form class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Candidate Full Name *</label>
+              <input type="text" required placeholder="e.g. Fatima Abubakar" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Age / Date of Birth *</label>
+              <input type="date" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">State of Origin *</label>
+              <input type="text" required placeholder="e.g. Kano, Ogun, Enugu..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Guardian / Nominator Phone *</label>
+              <input type="tel" required placeholder="+234 800 000 0000" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Socioeconomic Background / NSR Reference</label>
+            <textarea rows="3" placeholder="Describe the candidate's household situation, secondary school background, and demonstrated talent in science, coding, or arts..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-ola-purple-800"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-ola-purple-800 hover:bg-ola-purple-900 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+            Submit Free Nomination
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ola-purple-950 text-slate-400 pt-16 pb-12 border-t border-ola-purple-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-8 h-8 rounded object-cover">
+          <span class="font-bold text-white">Odiso Leadership Academy (OLA)</span>
+        </div>
+        <div>Lagos Free Zone, Ibeju-Lekki &middot; &copy; 2026 OLA. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

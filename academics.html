@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual Enrollment STEAAM Academics | Odiso Leadership Academy</title>
+  <meta name="description" content="Explore Odiso Leadership Academy's 2-year post-secondary pre-tertiary STEAAM curriculum with dual enrollment college credits aligned with Carnegie Mellon University and Columbia Teachers College IUME.">
+  
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ola: {
+              purple: {
+                950: '#14021F',
+                900: '#240536',
+                850: '#2E0A42',
+                800: '#3E0957',
+                700: '#561077',
+                600: '#73199D',
+                500: '#9425C5',
+                200: '#E9D5FF',
+                100: '#F3E8FF',
+                50: '#FAF5FF',
+              },
+              gold: {
+                800: '#804E08',
+                700: '#97611A',
+                600: '#B87B24',
+                500: '#D99B4C',
+                400: '#EBB46E',
+                300: '#F5CE98',
+                200: '#FDE68A',
+                100: '#FEF3C7',
+                50: '#FFFDF5',
+              },
+              alabaster: '#FAF9F6',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-ola-alabaster text-slate-800 antialiased selection:bg-ola-gold-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-ola-purple-950 text-white text-xs py-2 px-4 border-b border-ola-purple-900/60">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <span class="text-slate-300">Dual Enrollment Pre-Tertiary Venture · CMU & Columbia Teachers College IUME Aligned</span>
+      <span class="text-ola-gold-400 font-medium">Lagos Free Zone, Ibeju-Lekki</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden shadow-md border border-ola-purple-800/20 group-hover:scale-105 transition-transform">
+            <img src="assets/images/logo.jpeg" alt="Odiso Leadership Academy Crest" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <span class="block font-heading font-extrabold text-xl tracking-tight text-ola-purple-950 leading-tight">ODISO</span>
+            <span class="block text-[11px] font-medium tracking-widest text-ola-gold-700 uppercase">Leadership Academy</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-700">
+          <a href="index.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Home</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">About & Context</a>
+          <a href="academics.html" class="px-3 py-2 rounded-lg text-ola-purple-800 font-semibold bg-ola-purple-50">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Life at Odiso</a>
+          <a href="admissions.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg hover:text-ola-purple-800 hover:bg-slate-50 transition-colors">Campus</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-3">
+          <a href="admissions.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-ola-purple-800 hover:bg-ola-purple-900 shadow-md">
+            Nominate a Scholar
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+    <div class="fixed right-0 top-0 bottom-0 w-5/6 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+          <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-10 h-10 rounded-lg object-cover">
+          <button id="mobile-menu-close" class="p-2 text-slate-500"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <nav class="mt-6 flex flex-col space-y-1 text-sm font-medium">
+          <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Home</a>
+          <a href="about.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">About & Context</a>
+          <a href="academics.html" class="px-4 py-3 rounded-xl bg-ola-purple-50 text-ola-purple-900 font-semibold">Dual Enrollment STEAAM</a>
+          <a href="student-life.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Life at Odiso</a>
+          <a href="admissions.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Free Admissions & Equity</a>
+          <a href="contact.html" class="px-4 py-3 rounded-xl hover:bg-slate-50">Campus</a>
+        </nav>
+      </div>
+      <a href="admissions.html" class="w-full py-3 text-center rounded-xl font-semibold text-white bg-ola-purple-800">Nominate a Scholar (100% Free)</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="py-16 bg-ola-purple-950 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-400">Post-Secondary Pre-Tertiary Venture</span>
+        <h1 class="text-3xl sm:text-5xl font-heading font-extrabold text-white mt-3">
+          Dual Enrollment <span class="gold-text-gradient">STEAAM</span> Curriculum
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base mt-4 leading-relaxed">
+          Allowing talented deserving female scholars to take university-level courses that transfer directly as equivalent college credits to world-class institutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dual Enrollment Acceleration Architecture -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+        <div class="lg:col-span-7 space-y-5 reveal">
+          <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">The 2-Year Bridge</span>
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900">
+            College Credit Transfer & Degree Acceleration
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            College credit for aligned degrees and career choices is a crucial target at the onset. OLA collaborates with the <strong>Carnegie Mellon University (CMU) School of Computer Science and College of Fine Arts</strong>, expanding to <strong>CMU-Africa College of Engineering</strong> and leading <strong>HBCU partners</strong>.
+          </p>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Upon completing their 2-year residency at OLA, students transfer their college-equivalent credits to accelerate completing their bachelor’s degrees abroad, reducing university duration and financial burden.
+          </p>
+          <div class="p-5 rounded-2xl bg-ola-purple-50 border border-ola-purple-200 text-xs text-slate-700">
+            <span class="font-bold text-ola-purple-900 block mb-1">Accreditation & Quality Assurance</span>
+            Enlisted the <strong>Edmund Gordon Institute for Urban and Minority Education (IUME) at Columbia University Teachers College</strong> to enrich, monitor, and evaluate course delivery standards.
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 reveal-right">
+          <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+            <img src="assets/images/campus-learning.jpeg" alt="Scholars in STEAAM Lab" class="w-full h-[360px] object-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- STEAAM 6 Core Pillars Breakdown -->
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-ola-gold-700">Disciplines</span>
+        <h3 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mt-1">Our Integrated STEAAM Disciplines</h3>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift reveal delay-100">
+          <div class="w-10 h-10 rounded-lg bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center font-bold mb-4">S</div>
+          <h4 class="font-heading font-bold text-base text-slate-900 mb-1">Science & Biotechnology</h4>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Molecular biology, physics, genomics, and environmental health diagnostics addressing local health realities.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift reveal delay-150">
+          <div class="w-10 h-10 rounded-lg bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center font-bold mb-4">T</div>
+          <h4 class="font-heading font-bold text-base text-slate-900 mb-1">Technology & CS</h4>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Full-stack software engineering, algorithms, AI applications, and cybersecurity aligned with CMU standards.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift reveal delay-200">
+          <div class="w-10 h-10 rounded-lg bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center font-bold mb-4">E</div>
+          <h4 class="font-heading font-bold text-base text-slate-900 mb-1">Engineering Systems</h4>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Renewable solar microgrids, embedded hardware, robotics, and clean infrastructure prototyping.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift reveal delay-250">
+          <div class="w-10 h-10 rounded-lg bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center font-bold mb-4">A</div>
+          <h4 class="font-heading font-bold text-base text-slate-900 mb-1">Arts & Pan-African Oratory</h4>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Fine arts, digital design, debate, African philosophy, rhetoric, and creative writing to foster cultural self-determination.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift reveal delay-300">
+          <div class="w-10 h-10 rounded-lg bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center font-bold mb-4">A</div>
+          <h4 class="font-heading font-bold text-base text-slate-900 mb-1">Agriculture & Agribusiness</h4>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Transforming the 22% NSR agricultural demographic into high-tech agribusiness, precision farming, and food systems leaders.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift reveal delay-350">
+          <div class="w-10 h-10 rounded-lg bg-ola-purple-800 text-ola-gold-400 flex items-center justify-center font-bold mb-4">M</div>
+          <h4 class="font-heading font-bold text-base text-slate-900 mb-1">Mathematics & Data</h4>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Calculus, linear algebra, discrete mathematics, and quantitative statistical modeling for evidence-based decision making.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ola-purple-950 text-slate-400 pt-16 pb-12 border-t border-ola-purple-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.jpeg" alt="OLA Crest" class="w-8 h-8 rounded object-cover">
+          <span class="font-bold text-white">Odiso Leadership Academy (OLA)</span>
+        </div>
+        <div>Lagos Free Zone, Ibeju-Lekki &middot; &copy; 2026 OLA. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
