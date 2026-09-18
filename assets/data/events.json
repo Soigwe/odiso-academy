@@ -8,7 +8,7 @@
     "location": "Lagos & Abuja Hubs / Online Virtual Testing",
     "summary": "Diagnostic entrance examination covering quantitative logic, critical reading, and creative STEAAM problem solving for secondary applicants.",
     "badge": "Mandatory for Applicants",
-    "badgeColor": "purple",
+    "image": "assets/images/students-group-1.jpeg",
     "author": "Admissions Office",
     "published": true
   },
@@ -21,7 +21,7 @@
     "location": "Lagos STEAAM Makerspace & Studio",
     "summary": "A 48-hour hands-on prototyping challenge where student teams build IoT sensors and computer vision solutions for community health.",
     "badge": "Student Showcase",
-    "badgeColor": "gold",
+    "image": "assets/images/campus-learning.jpeg",
     "author": "Tech & Engineering Dept",
     "published": true
   },
@@ -34,7 +34,7 @@
     "location": "Abuja Research Center & Global Zoom Broadcast",
     "summary": "Annual policy discussion bringing together university deans, African women scientists, and educational philanthropists.",
     "badge": "Public Seminar",
-    "badgeColor": "emerald",
+    "image": "assets/images/students-cohort.jpeg",
     "author": "IRAWCC Research Directorate",
     "published": true
   },
@@ -47,7 +47,7 @@
     "location": "OLA Agritech Research Farm, Epe",
     "summary": "Practical hydroponics harvesting, soil sensor data collection, and agricultural supply chain case studies.",
     "badge": "Field Immersion",
-    "badgeColor": "blue",
+    "image": "assets/images/students-group-2.jpeg",
     "author": "Agritech Department",
     "published": true
   },
@@ -60,7 +60,7 @@
     "location": "Virtual Assembly & Mentor Rooms",
     "summary": "Masterclass on US/UK university essays, international Olympiad preparation, and Mastercard Foundation scholarship applications.",
     "badge": "College Prep",
-    "badgeColor": "purple",
+    "image": "assets/images/student-portrait.jpeg",
     "author": "College Guidance Directorate",
     "published": true
   }

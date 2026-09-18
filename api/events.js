@@ -55,6 +55,16 @@ export default async function handler(req, res) {
         const badge = props.Badge?.rich_text?.[0]?.plain_text || category;
         const author = props.Author?.rich_text?.[0]?.plain_text || 'OLA Faculty';
 
+        // Extract image uploaded by teacher (from Files & Media property, or Page Cover)
+        let imageUrl = null;
+        if (props.Image?.files?.length > 0) {
+          imageUrl = props.Image.files[0].file?.url || props.Image.files[0].external?.url;
+        } else if (props.Cover?.files?.length > 0) {
+          imageUrl = props.Cover.files[0].file?.url || props.Cover.files[0].external?.url;
+        } else if (page.cover) {
+          imageUrl = page.cover.file?.url || page.cover.external?.url;
+        }
+
         return {
           id: page.id,
           title,
@@ -64,6 +74,7 @@ export default async function handler(req, res) {
           location,
           badge,
           author,
+          image: imageUrl,
           published: true
         };
       });
@@ -71,7 +82,6 @@ export default async function handler(req, res) {
       return res.status(200).json({ success: true, source: 'notion', events });
     } catch (err) {
       console.error('Error querying Notion:', err);
-      // Fallback to static data on error
     }
   }
 
@@ -97,6 +107,7 @@ export default async function handler(req, res) {
           location: "Lagos & Abuja Hubs",
           summary: "Entrance exam for prospective scholars across Nigeria.",
           badge: "Admissions",
+          image: "assets/images/students-group-1.jpeg",
           published: true
         }
       ]
