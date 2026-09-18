@@ -1,0 +1,67 @@
+[
+  {
+    "id": "event-1",
+    "title": "2026/2027 STEAAM Admissions Aptitude Assessment",
+    "category": "Admissions",
+    "date": "2026-10-15",
+    "time": "09:00 AM WAT",
+    "location": "Lagos & Abuja Hubs / Online Virtual Testing",
+    "summary": "Diagnostic entrance examination covering quantitative logic, critical reading, and creative STEAAM problem solving for secondary applicants.",
+    "badge": "Mandatory for Applicants",
+    "badgeColor": "purple",
+    "author": "Admissions Office",
+    "published": true
+  },
+  {
+    "id": "event-2",
+    "title": "Girls in AI & Embedded Robotics Hackathon",
+    "category": "Workshop",
+    "date": "2026-10-28",
+    "time": "10:00 AM – 4:00 PM WAT",
+    "location": "Lagos STEAAM Makerspace & Studio",
+    "summary": "A 48-hour hands-on prototyping challenge where student teams build IoT sensors and computer vision solutions for community health.",
+    "badge": "Student Showcase",
+    "badgeColor": "gold",
+    "author": "Tech & Engineering Dept",
+    "published": true
+  },
+  {
+    "id": "event-3",
+    "title": "IRAWCC Policy Roundtable: Female Leadership in African STEM",
+    "category": "Symposium",
+    "date": "2026-11-12",
+    "time": "02:00 PM WAT",
+    "location": "Abuja Research Center & Global Zoom Broadcast",
+    "summary": "Annual policy discussion bringing together university deans, African women scientists, and educational philanthropists.",
+    "badge": "Public Seminar",
+    "badgeColor": "emerald",
+    "author": "IRAWCC Research Directorate",
+    "published": true
+  },
+  {
+    "id": "event-4",
+    "title": "Agribusiness & Sustainable Food Systems Field Day",
+    "category": "Field Work",
+    "date": "2026-11-25",
+    "time": "08:30 AM – 1:00 PM WAT",
+    "location": "OLA Agritech Research Farm, Epe",
+    "summary": "Practical hydroponics harvesting, soil sensor data collection, and agricultural supply chain case studies.",
+    "badge": "Field Immersion",
+    "badgeColor": "blue",
+    "author": "Agritech Department",
+    "published": true
+  },
+  {
+    "id": "event-5",
+    "title": "Global College Pathways & Ivy League Scholarship Workshop",
+    "category": "College Prep",
+    "date": "2026-12-05",
+    "time": "04:00 PM WAT",
+    "location": "Virtual Assembly & Mentor Rooms",
+    "summary": "Masterclass on US/UK university essays, international Olympiad preparation, and Mastercard Foundation scholarship applications.",
+    "badge": "College Prep",
+    "badgeColor": "purple",
+    "author": "College Guidance Directorate",
+    "published": true
+  }
+]
